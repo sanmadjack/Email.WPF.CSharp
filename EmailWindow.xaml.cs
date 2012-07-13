@@ -10,6 +10,7 @@ namespace Email.WPF {
         public EmailWindow(Window owner) {
             InitializeComponent();
             TranslationHelpers.translateWindow(this);
+            this.Icon = owner.Icon;
         }
 
         private void button1_Click(object sender, RoutedEventArgs e) {
