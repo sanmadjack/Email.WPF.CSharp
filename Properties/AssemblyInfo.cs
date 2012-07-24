@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Email.WPF")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Kohls Department Stores Inc")]
+[assembly: AssemblyCompany("Matthew Barbour")]
 [assembly: AssemblyProduct("Email.WPF")]
-[assembly: AssemblyCopyright("Copyright © Kohls Department Stores Inc 2012")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
