@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="Email.WPF.EmailButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            xmlns:w="clr-namespace:SMJ.WPF;assembly=WPF"
+             mc:Ignorable="d">
+    <Grid>
+        <w:SuperButton Name="button" ImageSource="/WPF;Component/Icons/16px/mail-forward.png" ImageHeight="16" Text="$Email" IsEnabled="False" Click="button_Click" />
+    </Grid>
+</UserControl>

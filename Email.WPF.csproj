@@ -53,31 +53,32 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmailButton.cs" />
+    <Compile Include="EmailButton.xaml.cs">
+      <DependentUpon>EmailButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EmailWindow.xaml.cs">
       <DependentUpon>EmailWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EmailWPFHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="EmailButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EmailWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Config\Config.csproj">
-      <Project>{8176F259-FA07-4CA5-943D-4AA31D5FB857}</Project>
-      <Name>Config</Name>
+    <ProjectReference Include="..\WPF\WPF.csproj">
+      <Project>{870BDF17-18DA-4023-AF23-378A72941B66}</Project>
+      <Name>WPF</Name>
     </ProjectReference>
     <ProjectReference Include="..\Email\Email.csproj">
       <Project>{4B1E68FF-639F-4C26-98FC-59409D584BE2}</Project>
       <Name>Email</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MVC\MVC.csproj">
-      <Project>{4670BE82-DDDF-4614-BE3B-FB5DE4226D93}</Project>
-      <Name>MVC</Name>
     </ProjectReference>
     <ProjectReference Include="..\Translator\Translator.csproj">
       <Project>{1B233D4E-7DF0-4608-A0D5-94D416B5B359}</Project>
