@@ -82,6 +82,7 @@ namespace Email.WPF {
                     while (window.ShowDialog() == true) {
                         Source.EmailSender = window.email;
                         if (Source.EmailSender != null) {
+                            From = Source.EmailSender;
                             return true;
                         }
                     }

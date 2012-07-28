@@ -6,6 +6,6 @@
             xmlns:w="clr-namespace:SMJ.WPF;assembly=WPF"
              mc:Ignorable="d">
     <Grid>
-        <w:SuperButton Name="button" ImageSource="/WPF;Component/Icons/16px/mail-forward.png" ImageHeight="16" Text="$Email" IsEnabled="False" Click="button_Click" />
+        <w:SuperButton Name="button" ImageSource="/WPF;Component/Images/16px/mail-forward.png" ImageHeight="16" Text="$Email" IsEnabled="False" Click="button_Click" />
     </Grid>
 </UserControl>
