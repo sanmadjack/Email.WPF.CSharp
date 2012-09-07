@@ -1,6 +1,5 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using Email;
 using Translator.WPF;
 namespace Email.WPF {
     /// <summary>
