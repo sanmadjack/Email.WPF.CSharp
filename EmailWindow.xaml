@@ -14,7 +14,7 @@
             <ColumnDefinition />
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
-        <GroupBox Grid.ColumnSpan="2" Header="$ChangeLaterInSettings" Name="groupBox1" Margin="5">
+                <GroupBox Grid.ColumnSpan="2" Header="$EmailRequest" Name="groupBox1" Margin="5">
             <TextBox Height="23" Name="emailTxt" DataContext="{Binding}" TextChanged="emailTxt_TextChanged" TabIndex="1" />
         </GroupBox>
     </Grid>
