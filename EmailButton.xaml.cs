@@ -79,7 +79,7 @@ namespace Email.WPF {
 
             } else {
                 if (To == null || From == null) {
-                    throw new Exception("WTF?");
+                    throw new  Exception("There source for e-mail data is not found. Please report this via e-mail to sanmadjack@gmail.com");
                 }
             }
             return true;
