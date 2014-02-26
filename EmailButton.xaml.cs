@@ -59,17 +59,17 @@ namespace Email.WPF {
         private bool checkEmails() {
             Window parentWindow = Window.GetWindow(this);
             if (Source != null) {
-                if (To == null)
+                if (String.IsNullOrEmpty(To))
                     To = Source.EmailRecipient;
 
-                if (From == null)
+                if (String.IsNullOrEmpty(From))
                     From = Source.EmailSender;
 
-                if (From == null) {
+                if (String.IsNullOrEmpty(From)) {
                     EmailWindow window = new EmailWindow(parentWindow);
                     while (window.ShowDialog() == true) {
                         Source.EmailSender = window.email;
-                        if (Source.EmailSender != null) {
+                        if (!String.IsNullOrEmpty(Source.EmailSender)) {
                             From = Source.EmailSender;
                             return true;
                         }
@@ -78,7 +78,7 @@ namespace Email.WPF {
                 }
 
             } else {
-                if (To == null || From == null) {
+                if (String.IsNullOrEmpty(To) || String.IsNullOrEmpty(From)) {
                     throw new  Exception("There source for e-mail data is not found. Please report this via e-mail to sanmadjack@gmail.com");
                 }
             }
